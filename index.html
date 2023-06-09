@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aerolinea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2 class="text-center my-5 titulo">Reservas de vuelos Aerolineas Fajardo</h2>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-vuelo">
+                <form id="nuevo-vuelo">
+                    <legend class="mb-4">Datos del vuelo</legend>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Quién reserva:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="nombre" name="nombre" class="form-control"
+                                placeholder="Nombre Completo">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">C.I:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="number" id="cedula" name="cedula" class="form-control"
+                                placeholder="Documento de Identidad">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Origen:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <select class="form-control" name="origen" id="origen">
+                                <option value="">Seleccione</option>
+                                <option value="CCS">Caracas</option>
+                                <option value="VLN">Valencia</option>
+                                <option value="BLA">Barcelona</option>
+                                <option value="PMV">Porlamar</option>
+                                <option value="MAR">Maracaibo</option>
+                                <option value="CUM">Cumaná</option>
+                                <option value="PZO">Puerto Ordaz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Destino:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <select class="form-control" name="destino" id="destino">
+                                <option value="">Seleccione</option>
+                                <option value="CCS">Caracas</option>
+                                <option value="VLN">Valencia</option>
+                                <option value="BLA">Barcelona</option>
+                                <option value="PMV">Porlamar</option>
+                                <option value="MAR">Maracaibo</option>
+                                <option value="CUM">Cumaná</option>
+                                <option value="PZO">Puerto Ordaz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Ida:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="ida" name="ida" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Vuelta:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="vuelta" name="vuelta" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Personas:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <select class="form-control" name="personas" id="personas">
+                                <option value="">Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success w-100 d-block">Reservar vuelo</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 id="reserva" class="mb-4">Reserva de vuelos</h2>
+                <ul id="vuelos" class="list-group lista-vuelos"></ul>
+            </div>
+        </div>
+        <!--.row-->
+    </div>
+    <!--.container-->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
